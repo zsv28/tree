@@ -7,7 +7,7 @@
 - Редактирование через админку Django.
 - Поддержка нескольких меню на одной странице.
 - Рендеринг меню с помощью пользовательского тега шаблона.
-- 
+
 ### Технологии
 [![Python](https://img.shields.io/badge/-Python-464646?style=flat-square&logo=Python)](https://www.python.org/)
 
