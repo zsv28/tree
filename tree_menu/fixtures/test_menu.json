@@ -1,0 +1,65 @@
+[
+    {
+        "model": "tree_menu.menu",
+        "pk": 1,
+        "fields": {
+            "name": "main_menu"
+        }
+    },
+    {
+        "model": "tree_menu.menuitem",
+        "pk": 1,
+        "fields": {
+            "menu": 1,
+            "parent": null,
+            "title": "Home",
+            "url": "/",
+            "order": 1
+        }
+    },
+    {
+        "model": "tree_menu.menuitem",
+        "pk": 2,
+        "fields": {
+            "menu": 1,
+            "parent": null,
+            "title": "About",
+            "url": "/about/",
+            "order": 2
+        }
+    },
+    {
+        "model": "tree_menu.menuitem",
+        "pk": 3,
+        "fields": {
+            "menu": 1,
+            "parent": null,
+            "title": "Services",
+            "url": null,
+            "named_url": "services",
+            "order": 3
+        }
+    },
+    {
+        "model": "tree_menu.menuitem",
+        "pk": 4,
+        "fields": {
+            "menu": 1,
+            "parent": 3,
+            "title": "Consulting",
+            "url": "/services/consulting/",
+            "order": 1
+        }
+    },
+    {
+        "model": "tree_menu.menuitem",
+        "pk": 5,
+        "fields": {
+            "menu": 1,
+            "parent": 3,
+            "title": "Development",
+            "url": "/services/development/",
+            "order": 2
+        }
+    }
+]

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 5px 0;
+        }
+        ul li a {
+            text-decoration: none;
+            color: #007BFF;
+            padding: 5px 10px;
+            display: block;
+            border-radius: 4px;
+        }
+        ul li a:hover {
+            background-color: #007BFF;
+            color: #fff;
+        }
+        ul ul {
+            margin-left: 20px;
+            display: none;
+        }
+        ul .active > a {
+            background-color: #0056b3;
+            color: #fff;
+        }
+        ul .active > ul {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test Page</h1>
+    {% load draw_menu %}
+    <nav>
+        {% draw_menu 'main_menu' %}
+    </nav>
+</body>
+</html>
